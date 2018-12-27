@@ -16,5 +16,10 @@ namespace EmployeesApp.Presentation
         {
             InitializeComponent();
         }
+
+        private void Exit(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
