@@ -47,5 +47,11 @@
     <Folder Include="Enums\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeesApp.Infrastructure\EmployeesApp.Infrastructure.csproj">
+      <Project>{75f4b510-b570-4ef2-a573-7ddcd762ba30}</Project>
+      <Name>EmployeesApp.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

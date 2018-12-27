@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeesApp.Data\EmployeesApp.Data.csproj">
+      <Project>{8ab5076a-620b-49e2-8a54-14413dd44bb6}</Project>
+      <Name>EmployeesApp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeesApp.Domain\EmployeesApp.Domain.csproj">
+      <Project>{0190c140-d0cb-4bbe-8e78-acdd2560086e}</Project>
+      <Name>EmployeesApp.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeesApp.Infrastructure\EmployeesApp.Infrastructure.csproj">
+      <Project>{75f4b510-b570-4ef2-a573-7ddcd762ba30}</Project>
+      <Name>EmployeesApp.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

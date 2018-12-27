@@ -46,5 +46,15 @@
   <ItemGroup>
     <Folder Include="Repositories\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeesApp.Data\EmployeesApp.Data.csproj">
+      <Project>{8ab5076a-620b-49e2-8a54-14413dd44bb6}</Project>
+      <Name>EmployeesApp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeesApp.Infrastructure\EmployeesApp.Infrastructure.csproj">
+      <Project>{75f4b510-b570-4ef2-a573-7ddcd762ba30}</Project>
+      <Name>EmployeesApp.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
