@@ -15,6 +15,8 @@ namespace EmployeesApp.Data.Models
         public string Oib { get; set; }
         public Job Job { get; set; }
 
+        public static List<Employee> AllEmployees { get; set; }
+
         public List<Project> Projects { get; set; }
 
         public Employee(string name, string surname, DateTime dateOfBirth, string oib, Job job, List<Project> projects)
@@ -25,6 +27,8 @@ namespace EmployeesApp.Data.Models
             Oib = oib;
             Job = job;
             Projects = projects;
+
+            AllEmployees.Add(this);
         }
 
         public override string ToString() => $"{Name} {Surname}({Job}), OIB:{Oib}";
