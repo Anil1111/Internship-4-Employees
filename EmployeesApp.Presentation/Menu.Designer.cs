@@ -58,6 +58,7 @@
             this.employeesListButton.TabIndex = 1;
             this.employeesListButton.Text = "Popis radnika";
             this.employeesListButton.UseVisualStyleBackColor = true;
+            this.employeesListButton.Click += new System.EventHandler(this.EmployeesList);
             // 
             // employeeCreateButton
             // 

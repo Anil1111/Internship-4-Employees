@@ -21,5 +21,11 @@ namespace EmployeesApp.Presentation
         {
             Close();
         }
+
+        private void EmployeesList(object sender, EventArgs e)
+        {
+            var employeesListForm = new EmployeesListForm();
+            employeesListForm.ShowDialog();
+        }
     }
 }
