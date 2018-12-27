@@ -15,7 +15,7 @@ namespace EmployeesApp.Data.Models
         public string Oib { get; set; }
         public Job Job { get; set; }
 
-        public static List<Employee> AllEmployees { get; set; }
+        public static List<Employee> AllEmployees = new List<Employee>();
 
         public List<Project> Projects { get; set; }
 

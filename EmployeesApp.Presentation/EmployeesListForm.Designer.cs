@@ -31,6 +31,7 @@
             this.employeesListBox = new System.Windows.Forms.ListBox();
             this.employeeDetailsButton = new System.Windows.Forms.Button();
             this.employeeRemoveButton = new System.Windows.Forms.Button();
+            this.employeesInfoLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // employeesListBox
@@ -50,6 +51,7 @@
             this.employeeDetailsButton.TabIndex = 1;
             this.employeeDetailsButton.Text = "Pogledajte detalje zaposlenika";
             this.employeeDetailsButton.UseVisualStyleBackColor = true;
+            this.employeeDetailsButton.Click += new System.EventHandler(this.EmployeeDetails);
             // 
             // employeeRemoveButton
             // 
@@ -59,6 +61,18 @@
             this.employeeRemoveButton.TabIndex = 2;
             this.employeeRemoveButton.Text = "Ukloni zaposlenika";
             this.employeeRemoveButton.UseVisualStyleBackColor = true;
+            this.employeeRemoveButton.Click += new System.EventHandler(this.EmployeeDelete);
+            // 
+            // employeesInfoLabel
+            // 
+            this.employeesInfoLabel.AutoSize = true;
+            this.employeesInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeesInfoLabel.ForeColor = System.Drawing.Color.Red;
+            this.employeesInfoLabel.Location = new System.Drawing.Point(550, 82);
+            this.employeesInfoLabel.Name = "employeesInfoLabel";
+            this.employeesInfoLabel.Size = new System.Drawing.Size(238, 25);
+            this.employeesInfoLabel.TabIndex = 3;
+            this.employeesInfoLabel.Text = "NEMA ZAPOSLENIKA!";
             // 
             // EmployeesListForm
             // 
@@ -66,6 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.employeesInfoLabel);
             this.Controls.Add(this.employeeRemoveButton);
             this.Controls.Add(this.employeeDetailsButton);
             this.Controls.Add(this.employeesListBox);
@@ -74,6 +89,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lista svih zaposlenika";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -82,5 +98,6 @@
         private System.Windows.Forms.ListBox employeesListBox;
         private System.Windows.Forms.Button employeeDetailsButton;
         private System.Windows.Forms.Button employeeRemoveButton;
+        private System.Windows.Forms.Label employeesInfoLabel;
     }
 }
