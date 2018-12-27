@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EmployeesApp.Data.Models
 {
-    public class Employee
+    public sealed class Employee
     {
         public string Name { get; set; }
         public string Surname { get; set; }
