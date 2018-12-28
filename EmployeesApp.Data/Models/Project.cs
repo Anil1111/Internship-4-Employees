@@ -14,7 +14,7 @@ namespace EmployeesApp.Data.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        public List<Project> AllProjects { get; set; }
+        public static List<Project> AllProjects = new List<Project>();
 
         public Project(string name, Dictionary<Employee, int> employeesAndWorkingTime, DateTime startDate, DateTime endDate)
         {
@@ -23,6 +23,7 @@ namespace EmployeesApp.Data.Models
             EmployeesAndWorkingTime = employeesAndWorkingTime;
             StartDate = startDate;
             EndDate = endDate;
+            AllProjects.Add(this);
         }
 
         public override string ToString() => $"{Name}({EmployeesAndWorkingTime.Count} radnika), trajanje: {StartDate.ToShortDateString()}-{EndDate.ToShortDateString()}";

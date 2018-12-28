@@ -112,6 +112,7 @@
             this.Controls.Add(this.employeeOibLabel);
             this.Controls.Add(this.employeeSurnameLabel);
             this.Controls.Add(this.employeeNameLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EmployeeDetailsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EmployeeDetailsForm";

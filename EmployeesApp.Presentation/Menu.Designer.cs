@@ -68,6 +68,7 @@
             this.employeeCreateButton.TabIndex = 2;
             this.employeeCreateButton.Text = "Kreiranje novog radnika";
             this.employeeCreateButton.UseVisualStyleBackColor = true;
+            this.employeeCreateButton.Click += new System.EventHandler(this.CreateEmployee);
             // 
             // projectsListButton
             // 
@@ -129,6 +130,7 @@
             this.Controls.Add(this.EmployeesGroupBox);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.menuLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";

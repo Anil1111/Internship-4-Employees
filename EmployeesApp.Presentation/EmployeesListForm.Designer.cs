@@ -65,10 +65,9 @@
             // 
             // employeesInfoLabel
             // 
-            this.employeesInfoLabel.AutoSize = true;
             this.employeesInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeesInfoLabel.ForeColor = System.Drawing.Color.Red;
-            this.employeesInfoLabel.Location = new System.Drawing.Point(550, 82);
+            this.employeesInfoLabel.Location = new System.Drawing.Point(301, 204);
             this.employeesInfoLabel.Name = "employeesInfoLabel";
             this.employeesInfoLabel.Size = new System.Drawing.Size(238, 25);
             this.employeesInfoLabel.TabIndex = 3;
@@ -85,11 +84,11 @@
             this.Controls.Add(this.employeeDetailsButton);
             this.Controls.Add(this.employeesListBox);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EmployeesListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lista svih zaposlenika";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

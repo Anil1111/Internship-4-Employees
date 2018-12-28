@@ -33,12 +33,12 @@
             this.employeeSurnameLabel = new System.Windows.Forms.Label();
             this.employeeSurnameTextBox = new System.Windows.Forms.TextBox();
             this.employeeDateOfBirthLabel = new System.Windows.Forms.Label();
-            this.employeeDateOfBirthDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.newEmployeeJobLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.newEmployeeProjectsLabel = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.employeeDateOfBirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.employeeJobLabel = new System.Windows.Forms.Label();
+            this.employeeJobComboBox = new System.Windows.Forms.ComboBox();
+            this.employeeProjectsLabel = new System.Windows.Forms.Label();
+            this.employeeProjectsCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.employeeSaveButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -83,62 +83,62 @@
             this.employeeDateOfBirthLabel.TabIndex = 4;
             this.employeeDateOfBirthLabel.Text = "Datum rođenja:";
             // 
-            // employeeDateOfBirthDateTimePicker1
+            // employeeDateOfBirthDateTimePicker
             // 
-            this.employeeDateOfBirthDateTimePicker1.Location = new System.Drawing.Point(55, 300);
-            this.employeeDateOfBirthDateTimePicker1.Name = "employeeDateOfBirthDateTimePicker1";
-            this.employeeDateOfBirthDateTimePicker1.Size = new System.Drawing.Size(245, 22);
-            this.employeeDateOfBirthDateTimePicker1.TabIndex = 5;
+            this.employeeDateOfBirthDateTimePicker.Location = new System.Drawing.Point(55, 300);
+            this.employeeDateOfBirthDateTimePicker.Name = "employeeDateOfBirthDateTimePicker";
+            this.employeeDateOfBirthDateTimePicker.Size = new System.Drawing.Size(245, 22);
+            this.employeeDateOfBirthDateTimePicker.TabIndex = 5;
             // 
-            // newEmployeeJobLabel
+            // employeeJobLabel
             // 
-            this.newEmployeeJobLabel.AutoSize = true;
-            this.newEmployeeJobLabel.Location = new System.Drawing.Point(488, 93);
-            this.newEmployeeJobLabel.Name = "newEmployeeJobLabel";
-            this.newEmployeeJobLabel.Size = new System.Drawing.Size(60, 17);
-            this.newEmployeeJobLabel.TabIndex = 6;
-            this.newEmployeeJobLabel.Text = "Pozicija:";
+            this.employeeJobLabel.AutoSize = true;
+            this.employeeJobLabel.Location = new System.Drawing.Point(488, 93);
+            this.employeeJobLabel.Name = "employeeJobLabel";
+            this.employeeJobLabel.Size = new System.Drawing.Size(60, 17);
+            this.employeeJobLabel.TabIndex = 6;
+            this.employeeJobLabel.Text = "Pozicija:";
             // 
-            // comboBox1
+            // employeeJobComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(491, 127);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(245, 24);
-            this.comboBox1.TabIndex = 7;
+            this.employeeJobComboBox.FormattingEnabled = true;
+            this.employeeJobComboBox.Location = new System.Drawing.Point(491, 127);
+            this.employeeJobComboBox.Name = "employeeJobComboBox";
+            this.employeeJobComboBox.Size = new System.Drawing.Size(245, 24);
+            this.employeeJobComboBox.TabIndex = 7;
             // 
-            // newEmployeeProjectsLabel
+            // employeeProjectsLabel
             // 
-            this.newEmployeeProjectsLabel.AutoSize = true;
-            this.newEmployeeProjectsLabel.Location = new System.Drawing.Point(489, 171);
-            this.newEmployeeProjectsLabel.Name = "newEmployeeProjectsLabel";
-            this.newEmployeeProjectsLabel.Size = new System.Drawing.Size(59, 17);
-            this.newEmployeeProjectsLabel.TabIndex = 8;
-            this.newEmployeeProjectsLabel.Text = "Projekti:";
+            this.employeeProjectsLabel.AutoSize = true;
+            this.employeeProjectsLabel.Location = new System.Drawing.Point(489, 171);
+            this.employeeProjectsLabel.Name = "employeeProjectsLabel";
+            this.employeeProjectsLabel.Size = new System.Drawing.Size(59, 17);
+            this.employeeProjectsLabel.TabIndex = 8;
+            this.employeeProjectsLabel.Text = "Projekti:";
             // 
-            // checkedListBox1
+            // employeeProjectsCheckedListBox
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(491, 199);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(245, 123);
-            this.checkedListBox1.TabIndex = 9;
+            this.employeeProjectsCheckedListBox.FormattingEnabled = true;
+            this.employeeProjectsCheckedListBox.Location = new System.Drawing.Point(491, 199);
+            this.employeeProjectsCheckedListBox.Name = "employeeProjectsCheckedListBox";
+            this.employeeProjectsCheckedListBox.Size = new System.Drawing.Size(245, 123);
+            this.employeeProjectsCheckedListBox.TabIndex = 9;
             // 
-            // button1
+            // employeeSaveButton
             // 
-            this.button1.Location = new System.Drawing.Point(337, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 51);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.employeeSaveButton.Location = new System.Drawing.Point(337, 371);
+            this.employeeSaveButton.Name = "employeeSaveButton";
+            this.employeeSaveButton.Size = new System.Drawing.Size(150, 51);
+            this.employeeSaveButton.TabIndex = 10;
+            this.employeeSaveButton.Text = "Spremi";
+            this.employeeSaveButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(249, 27);
+            this.label1.Location = new System.Drawing.Point(233, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 29);
             this.label1.TabIndex = 11;
@@ -151,18 +151,20 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.newEmployeeProjectsLabel);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.newEmployeeJobLabel);
-            this.Controls.Add(this.employeeDateOfBirthDateTimePicker1);
+            this.Controls.Add(this.employeeSaveButton);
+            this.Controls.Add(this.employeeProjectsCheckedListBox);
+            this.Controls.Add(this.employeeProjectsLabel);
+            this.Controls.Add(this.employeeJobComboBox);
+            this.Controls.Add(this.employeeJobLabel);
+            this.Controls.Add(this.employeeDateOfBirthDateTimePicker);
             this.Controls.Add(this.employeeDateOfBirthLabel);
             this.Controls.Add(this.employeeSurnameTextBox);
             this.Controls.Add(this.employeeSurnameLabel);
             this.Controls.Add(this.employeeNameTextBox);
             this.Controls.Add(this.employeeNameLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EmployeeCreateForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EmployeeCreateForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,12 +178,12 @@
         private System.Windows.Forms.Label employeeSurnameLabel;
         private System.Windows.Forms.TextBox employeeSurnameTextBox;
         private System.Windows.Forms.Label employeeDateOfBirthLabel;
-        private System.Windows.Forms.DateTimePicker employeeDateOfBirthDateTimePicker1;
-        private System.Windows.Forms.Label newEmployeeJobLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label newEmployeeProjectsLabel;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker employeeDateOfBirthDateTimePicker;
+        private System.Windows.Forms.Label employeeJobLabel;
+        private System.Windows.Forms.ComboBox employeeJobComboBox;
+        private System.Windows.Forms.Label employeeProjectsLabel;
+        private System.Windows.Forms.CheckedListBox employeeProjectsCheckedListBox;
+        private System.Windows.Forms.Button employeeSaveButton;
         private System.Windows.Forms.Label label1;
     }
 }

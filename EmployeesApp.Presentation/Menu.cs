@@ -14,11 +14,13 @@ namespace EmployeesApp.Presentation
     public partial class Menu : Form
     {
         private EmployeeRepository _employeeRepository;
+        private ProjectRespository _projectRepository;
 
         public Menu()
         {
             InitializeComponent();
             _employeeRepository = new EmployeeRepository();
+            _projectRepository = new ProjectRespository();
         }
 
         private void Exit(object sender, EventArgs e)
@@ -30,6 +32,12 @@ namespace EmployeesApp.Presentation
         {
             var employeesListForm = new EmployeesListForm(_employeeRepository);
             employeesListForm.ShowDialog();
+        }
+
+        private void CreateEmployee(object sender, EventArgs e)
+        {
+            var employeeCreateForm = new EmployeeCreateForm();
+            employeeCreateForm.ShowDialog();
         }
     }
 }

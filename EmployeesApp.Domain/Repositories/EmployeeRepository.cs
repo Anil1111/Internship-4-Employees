@@ -10,8 +10,6 @@ namespace EmployeesApp.Domain.Repositories
 {
     public class EmployeeRepository
     {
-        public List<Employee> GetAllEmployees() => Employee.AllEmployees;
-
         public EmployeeRepository()
         {
             SeedData();
@@ -23,6 +21,8 @@ namespace EmployeesApp.Domain.Repositories
             new Employee("Mate", "Jovanovic", DateTime.Now, "1312312421", Job.dizajner, new List<Project>());
             new Employee("Sime", "Jovanovic", DateTime.Now, "1312312421", Job.dizajner, new List<Project>());
         }
+
+        public List<Employee> GetAllEmployees() => Employee.AllEmployees;
 
         public void Edit(Employee employeeForEdit)
         {
