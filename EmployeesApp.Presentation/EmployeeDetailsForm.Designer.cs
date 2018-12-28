@@ -89,6 +89,7 @@
             this.employeeEditButton.TabIndex = 6;
             this.employeeEditButton.Text = "Promijeni detalje radnika";
             this.employeeEditButton.UseVisualStyleBackColor = true;
+            this.employeeEditButton.Click += new System.EventHandler(this.EmployeeEdit);
             // 
             // employeeDateOfBirthLabel
             // 

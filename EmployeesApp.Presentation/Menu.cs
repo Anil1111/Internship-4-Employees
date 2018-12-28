@@ -36,7 +36,7 @@ namespace EmployeesApp.Presentation
 
         private void CreateEmployee(object sender, EventArgs e)
         {
-            var employeeCreateForm = new EmployeeCreateForm();
+            var employeeCreateForm = new EmployeeCreateForm(_projectRepository);
             employeeCreateForm.ShowDialog();
         }
     }

@@ -25,5 +25,11 @@ namespace EmployeesApp.Presentation
             employeeDateOfBirthLabel.Text = $"{employeeDateOfBirthLabel.Text}: {Employee.DateOfBirth}";
             employeeJobLabel.Text = $"{employeeJobLabel.Text}: {Employee.Job}";
         }
+
+        private void EmployeeEdit(object sender, EventArgs e)
+        {
+            var employeeEditForm = new EmployeeEditForm(Employee);
+            employeeEditForm.ShowDialog();
+        }
     }
 }

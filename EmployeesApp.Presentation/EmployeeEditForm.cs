@@ -1,6 +1,5 @@
 ﻿using EmployeesApp.Data.Enums;
 using EmployeesApp.Data.Models;
-using EmployeesApp.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,22 +12,24 @@ using System.Windows.Forms;
 
 namespace EmployeesApp.Presentation
 {
-    public partial class EmployeeCreateForm : Form
+    public partial class EmployeeEditForm : Form
     {
         public Employee Employee;
-        private ProjectRespository _projectRepository;
 
-        public EmployeeCreateForm(ProjectRespository projectRepository)
+        public EmployeeEditForm(Employee employee)
         {
             InitializeComponent();
-
-            _projectRepository = projectRepository;
+            Employee = employee;
+            employeeNameTextBox.Text =Employee.Name;
+            employeeSurnameTextBox.Text = Employee.Surname;
+            employeeOibTextBox.Text = Employee.Oib;
+            employeeDateOfBirthDateTimePicker.Value = Employee.DateOfBirth;
 
             foreach (var job in Enum.GetValues(typeof(Job)))
                 employeeJobComboBox.Items.Add(job);
 
+            employeeJobComboBox.SelectedItem = employee.Job;
             employeeJobComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            _projectRepository.GetAllProjects().ForEach(project => employeeProjectsCheckedListBox.Items.Add(project));
         }
     }
 }

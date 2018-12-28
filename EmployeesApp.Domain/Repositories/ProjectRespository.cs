@@ -21,6 +21,6 @@ namespace EmployeesApp.Domain.Repositories
 
         }
 
-        public List<Project> GetAllEmployees() => Project.AllProjects;
+        public List<Project> GetAllProjects() => Project.AllProjects;
     }
 }
