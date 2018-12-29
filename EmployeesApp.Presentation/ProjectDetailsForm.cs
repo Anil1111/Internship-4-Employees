@@ -22,5 +22,11 @@ namespace EmployeesApp.Presentation
             projectNameLabel.Text = Project.Name;
             projectDurationLabel.Text = Project.Duration();
         }
+
+        private void ProjectEdit(object sender, EventArgs e)
+        {
+            var projectEditForm = new ProjectEditForm();
+            projectEditForm.Show();
+        }
     }
 }

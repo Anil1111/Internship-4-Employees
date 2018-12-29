@@ -88,6 +88,7 @@
             this.projectCreateButton.TabIndex = 4;
             this.projectCreateButton.Text = "Kreiranje novog projekta";
             this.projectCreateButton.UseVisualStyleBackColor = true;
+            this.projectCreateButton.Click += new System.EventHandler(this.CreateProject);
             // 
             // button5
             // 

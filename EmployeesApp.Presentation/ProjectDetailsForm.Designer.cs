@@ -45,7 +45,7 @@
             this.projectNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.projectNameLabel.Location = new System.Drawing.Point(5, 46);
             this.projectNameLabel.Name = "projectNameLabel";
-            this.projectNameLabel.Size = new System.Drawing.Size(115, 39);
+            this.projectNameLabel.Size = new System.Drawing.Size(109, 38);
             this.projectNameLabel.TabIndex = 0;
             this.projectNameLabel.Text = "label1";
             // 
@@ -120,6 +120,7 @@
             this.projectEditButton.TabIndex = 8;
             this.projectEditButton.Text = "Uređivanje projekta:";
             this.projectEditButton.UseVisualStyleBackColor = true;
+            this.projectEditButton.Click += new System.EventHandler(this.ProjectEdit);
             // 
             // ProjectDetailsForm
             // 
