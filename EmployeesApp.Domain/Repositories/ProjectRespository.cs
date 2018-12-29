@@ -22,5 +22,14 @@ namespace EmployeesApp.Domain.Repositories
         }
 
         public List<Project> GetAllProjects() => Project.AllProjects;
+
+        public void Delete(Project selectedProjectToDelete)
+        {
+            var projectToDelete = GetAllProjects().Where(project => project.Id == selectedProjectToDelete.Id).FirstOrDefault();
+
+            if (projectToDelete == null) return;
+
+            Project.AllProjects.Remove(projectToDelete);
+        }
     }
 }

@@ -50,6 +50,7 @@
             this.projectDetailsButton.TabIndex = 1;
             this.projectDetailsButton.Text = "Detalji projekta";
             this.projectDetailsButton.UseVisualStyleBackColor = true;
+            this.projectDetailsButton.Click += new System.EventHandler(this.ProjectDetails);
             // 
             // projectRemoveButton
             // 
@@ -59,6 +60,7 @@
             this.projectRemoveButton.TabIndex = 2;
             this.projectRemoveButton.Text = "Brisanje projekta";
             this.projectRemoveButton.UseVisualStyleBackColor = true;
+            this.projectRemoveButton.Click += new System.EventHandler(this.ProjectDelete);
             // 
             // ProjectsListForm
             // 

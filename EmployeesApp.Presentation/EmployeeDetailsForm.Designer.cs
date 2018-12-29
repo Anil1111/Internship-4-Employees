@@ -87,7 +87,7 @@
             this.employeeEditButton.Name = "employeeEditButton";
             this.employeeEditButton.Size = new System.Drawing.Size(203, 67);
             this.employeeEditButton.TabIndex = 6;
-            this.employeeEditButton.Text = "Promijeni detalje radnika";
+            this.employeeEditButton.Text = "Uređivanje radnika:";
             this.employeeEditButton.UseVisualStyleBackColor = true;
             this.employeeEditButton.Click += new System.EventHandler(this.EmployeeEdit);
             // 

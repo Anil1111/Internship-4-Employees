@@ -34,5 +34,35 @@ namespace EmployeesApp.Presentation
                 .ToList()
                 .ForEach(project => projectsListBox.Items.Add(project));
         }
+
+        private void ProjectDetails(object sender, EventArgs e)
+        {
+
+            var selectedProject = projectsListBox.SelectedItem as Project;
+            if (selectedProject == null) return;
+
+            var projectDetailsForm = new ProjectDetailsForm(selectedProject);
+            projectDetailsForm.ShowDialog();
+        }
+
+        private void ProjectDelete(object sender, EventArgs e)
+        {
+            var selectedProjectToDelete = projectsListBox.SelectedItem as Project;
+            if (selectedProjectToDelete == null) return;
+
+            var decisionToDelete = MessageBox.Show($"Jeste li sigurni da želite izbrisati projekt:\n{selectedProjectToDelete.ToString()}", "Brisanje projekta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            switch (decisionToDelete)
+            {
+                case DialogResult.Yes:
+                    _projectRespository.Delete(selectedProjectToDelete);
+                    break;
+
+                case DialogResult.No:
+                    break;
+            }
+
+            RefreshProjects();
+        }
     }
 }

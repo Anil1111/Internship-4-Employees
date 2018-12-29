@@ -27,5 +27,7 @@ namespace EmployeesApp.Data.Models
         }
 
         public override string ToString() => $"{Name}({EmployeesAndWorkingTime.Count} radnika), trajanje: {StartDate.ToShortDateString()}-{EndDate.ToShortDateString()}";
+
+        public string Duration() => $"{StartDate.ToShortDateString()}-{EndDate.ToShortDateString()}";
     }
 }
