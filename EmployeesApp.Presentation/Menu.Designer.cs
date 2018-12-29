@@ -78,6 +78,7 @@
             this.projectsListButton.TabIndex = 3;
             this.projectsListButton.Text = "Popis projekata";
             this.projectsListButton.UseVisualStyleBackColor = true;
+            this.projectsListButton.Click += new System.EventHandler(this.ProjectsList);
             // 
             // projectCreateButton
             // 

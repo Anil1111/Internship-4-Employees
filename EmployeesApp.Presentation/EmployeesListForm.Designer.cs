@@ -49,7 +49,7 @@
             this.employeeDetailsButton.Name = "employeeDetailsButton";
             this.employeeDetailsButton.Size = new System.Drawing.Size(164, 67);
             this.employeeDetailsButton.TabIndex = 1;
-            this.employeeDetailsButton.Text = "Pogledajte detalje zaposlenika";
+            this.employeeDetailsButton.Text = "Detalji zaposlenika";
             this.employeeDetailsButton.UseVisualStyleBackColor = true;
             this.employeeDetailsButton.Click += new System.EventHandler(this.EmployeeDetails);
             // 
@@ -59,7 +59,7 @@
             this.employeeRemoveButton.Name = "employeeRemoveButton";
             this.employeeRemoveButton.Size = new System.Drawing.Size(164, 67);
             this.employeeRemoveButton.TabIndex = 2;
-            this.employeeRemoveButton.Text = "Ukloni zaposlenika";
+            this.employeeRemoveButton.Text = "Brisanje zaposlenika";
             this.employeeRemoveButton.UseVisualStyleBackColor = true;
             this.employeeRemoveButton.Click += new System.EventHandler(this.EmployeeDelete);
             // 

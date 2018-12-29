@@ -39,5 +39,11 @@ namespace EmployeesApp.Presentation
             var employeeCreateForm = new EmployeeCreateForm(_projectRepository);
             employeeCreateForm.ShowDialog();
         }
+
+        private void ProjectsList(object sender, EventArgs e)
+        {
+            var projectsListForm = new ProjectsListForm(_projectRepository);
+            projectsListForm.ShowDialog();
+        }
     }
 }
